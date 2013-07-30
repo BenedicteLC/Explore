@@ -1,0 +1,10 @@
+<launch>
+  <master auto="start"/>
+   
+  <!--- Minimal bringup -->
+  <include file="$(find turtlebot_bringup)/minimal.launch" />
+
+  <!--- Run the camera -->
+  <include file="$(find turtlebot_bringup)/kinect.launch" /> 
+  
+</launch>
